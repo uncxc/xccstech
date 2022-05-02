@@ -78,11 +78,6 @@ a {
         }
 
 
-/* Hide the link that should open and close the navbar on small screens */
-.navbar .icon {
-  display: none;
-}
-
 /*Left Title*/
 
 h4 {
@@ -90,7 +85,7 @@ h4 {
   z-index: 999;
   text-align: center;
   font-size: 40px;
-  color: #fff;
+  color: #fff !important;
 }
 
 
