@@ -1,3 +1,4 @@
+<script src="navigation.js"></script>
 $(document).ready(function() {
   
     $(".button a span").click(function() {
