@@ -1,4 +1,4 @@
-script src="script.js"
+<script>
 
   $(document).ready(function() {
   $(".button a span").click(function() {
@@ -57,3 +57,4 @@ function myFunction() {
     x.className = "navbar";
   }
 }
+</script>
