@@ -19,7 +19,6 @@ p {font-size: 1.25em;}
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
 body {
   font-family: poppins, sans-serif;  
-  margin: px;
 }
 
 /*Layout*/
@@ -27,7 +26,7 @@ html,
 body {
   background: #010101; 
   width: 100%;
-  height: 100%;
+  height: 120%;
 }
 body {color: #ffffff;}
 *,
@@ -35,7 +34,7 @@ body {color: #ffffff;}
 *:after {box-sizing: border-box;}
 .line {
   float: center;
-  width: 90%;
+
   border-top: .25em solid $lBlack;
 }
 .wrapper {
@@ -59,35 +58,10 @@ a {
   &:hover {color: darken($red, 10%);}
   &:active {color: lighten($red, 5%);}
 }
-/*Navigation*/ 
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-  background-color: transparent;
-  position: sticky;
-  font-size: 18px;
-}
-      .navbar {
-         padding: 10px 10px 10px 10px;
-        	margin: 20px 20px 20px 20px;
-          width: 60px;
-        	position: relative;
-        	display: block;
-          text-align: center;
-        	border: 1px solid white;
-        	color: white;
-        }
-
-
-/* Hide the link that should open and close the navbar on small screens */
-.navbar .icon {
-  display: none;
-}
 
 /*Left Title*/
 
 h4 {
-
-  z-index: 999;
   text-align: center;
   font-size: 40px;
   color: #fff;
@@ -98,17 +72,17 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
-  background-color: #000;
+  height: 8vh;
+  background-color: #010101;
   line-height: 1px;
+  position: relative;
 }
 
 h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  background-color: #000;
+  background: #ff0000;
   line-height: 1px; 
 }
 
@@ -117,7 +91,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 6vh;
   line-height: 1px;
   }
   
@@ -132,15 +106,14 @@ h5 {
 h6:not(.server) {
   font-family: sans-serif;
   font-size: 2em;
-  letter-spacing: 1px;
-  overflow: hidden;
+  letter-spacing: 1px
+  display: inline;  
 }
 
 .server {
   font-family: sans-serif;
-  font-size: .5em;
-  letter-spacing: 1px;
-  overflow: hidden;
+  font-size: 1em !important;
+  letter-spacing: .5px;
   text-transform: lowercase !important;
 }
 
@@ -150,7 +123,6 @@ h6:not(.server) {
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 4px;
-  overflow: hidden;
   background: linear-gradient(90deg, #000, #fff, #000);
   background-repeat: no-repeat;
   background-size: 80%;
@@ -180,7 +152,6 @@ h6:not(.server) {
   font-family: "Cairo";
   text-align: center;
   color: #FFF;
-  display: inline;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -272,7 +243,7 @@ hr {
   text-align: justify;
 }
 .box .button {
-  margin: 4em auto;
+ margin: 4em auto;
 }
 .box .button {
   padding: .75em 1.25em;
@@ -358,8 +329,7 @@ hr {
 }
 
 
-.sec-partners h1 {padding: .35em;}
-.sec-partners h1 {margin-top: 1em;}
+
 .sec-partners h1 {
   text-align: center !important;
 }
@@ -378,7 +348,7 @@ hr {
         	position: relative;
         	display: block;
         	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-            text-align: center;
+          text-align: center;
         	border: 1px solid white;
         	color:white;
         }
@@ -417,12 +387,15 @@ hr {
 
 footer {
   border-radius: 28px;
-  left: 50%;
-  top: 5%;
+  left: 40%;
+  top: 0%;
   bottom: 5%;
   position: relative;
   display: block;
   background: #010101;
+  font-size: 100%;
+  color: #fff;  
+}
 
   box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
   -webkit-transform: translate(-50%, -50%);
@@ -436,7 +409,7 @@ footer {
     text-align: center;
   }
   nav ul li {
-    margin: 20px;
+    margin: 0px;
   }
   .project {
     margin: 40px 0;
