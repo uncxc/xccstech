@@ -1,1 +1,430 @@
-x
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+// Variables
+$red: #ff0000;
+$lBlack: #010101;
+$darkGrey: #808080;
+$ghostWhite: #f8f8ff;
+$lightGrey: #C0C0C0;
+
+// Mixins
+@mixin transition($property) {transition: $property .25s;}
+
+/*Typography*/
+html {font: 16px 'Open Sans Condensed', Roboto, Verdana, sans-serif;}
+h1 {font-size: 2.25em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.75em;}
+p {font-size: 1.25em;}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+body {
+  font-family: poppins, sans-serif;  
+  margin: px;
+}
+
+/*Layout*/
+html,
+body {
+  background: #010101; 
+  width: 100%;
+  height: 100%;
+}
+body {color: #ffffff;}
+*,
+*:before,
+*:after {box-sizing: border-box;}
+.line {
+  float: center;
+  width: 90%;
+  border-top: .25em solid $lBlack;
+}
+.wrapper {
+  margin: auto;
+  width: 60em;/*960px*/
+  //min-height: 100%;
+}
+section,
+footer {
+  float: center;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: color .25s;
+}
+.link {
+  font-weight: bold;
+  color: #ff0000;
+  &:focus,
+  &:hover {color: darken($red, 10%);}
+  &:active {color: lighten($red, 5%);}
+}
+/*Navigation*/ 
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: transparent;
+  position: sticky;
+  font-size: 18px;
+}
+      .navbar {
+         padding: 10px 10px 10px 10px;
+        	margin: 20px 20px 20px 20px;
+          width: 60px;
+        	position: relative;
+        	display: block;
+          text-align: center;
+        	border: 1px solid white;
+        	color: white;
+        }
+
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+/*Left Title*/
+
+h4 {
+
+  z-index: 999;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+
+
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #000;
+  line-height: 1px;
+}
+
+h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #000;
+  line-height: 1px; 
+}
+
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  line-height: 1px;
+  }
+  
+h5 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+
+h6:not(.server) {
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.server {
+  font-family: sans-serif;
+  font-size: .5em;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-transform: lowercase !important;
+}
+
+ h4 {
+  padding: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.venom1 {
+ height: 250px;
+ width: 250px;
+ object-fit: contain;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+.title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  letter-spacing: 1px;
+}
+
+
+h1,h5 {
+  background-image: url(http://www.gifstop.com/images/backgrounds/redwave.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+/* styling my button */
+
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #FFF;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+ background-color: #fff;
+ color: #010101;
+}
+  
+header li {width: 20%;}
+header li:not(:first-child) {margin-left: 2%;}
+header .nav-ul a {
+  display: block;
+  font-size: 1.5em;
+  padding: 1.75em .5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  &:focus,
+  &:hover {color: #ff0000;}
+  &:active {color: lighten(#00FF00, 5%);}
+}
+/*Sections*/
+section {margin: 1em 0;}
+section h1 {text-transform: uppercase;}
+hr {
+  border-color: #fff;
+  border-style: dashed;
+}
+.vertical {
+  width: 0;
+  height: 10px;
+}
+/*Intro*/
+.sec-intro {position: relative;}
+
+.sec-intro h1 {
+  position: absolute;
+  bottom: .5em;
+  left: .5em;
+  padding: .5em;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+/*Boxes*/
+.box {
+  float: left;
+  padding: 1.5em 1em;
+  width: 25%;
+  height: 400px;
+  border-top: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  border-left: .1em solid #fff;
+  @include transition(background);
+  &:focus,
+  &:hover {background: #121212;}
+}
+.box:last-child {border-right: .1em solid #fff;}
+.box h1 {text-align: center;}
+.box p {
+  margin-top: 4em;
+  height: 6em;
+  text-align: justify;
+}
+.box .button {
+  margin: 4em auto;
+}
+.box .button {
+  padding: .75em 1.25em;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background: #010101;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  &:focus,
+  &:hover {background: darken(#ff0000, 7%);}
+  &:active {background: #010101;}
+}
+/*Events/Add*/
+.sec-events {text-align: center;}
+.sec-events > h1 {margin-top: 1em;}
+.sec-events hl {float: center;}
+.sec-events article {
+  padding: 1em;
+  float: center;
+  width: 100%;
+  text-align: center;
+}
+.sec-events article h1,
+.sec-events article p {
+  display: block;
+  margin: .5em 0;
+  padding: .25em 1em;
+  font-size: 110%;
+}
+.sec-events article h1 {float: center;padding-right:1em;}
+.sec-events article h1 {font-weight: bold;text-align: center;}
+
+
+.sec-events .button {
+  svg {
+    display: none;
+  }
+  div {
+    span {
+      background: #ff0000;
+      display: block;
+      border-radius: 2px;
+   }
+  }
+  a {
+    span {
+      cursor: pointer;
+      display: block;
+    }
+    position: relative;
+    display: block;
+    background: #010101;
+    z-index: 2;
+    line-height: 60px;
+    border-radius: 28px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
+  }
+  border-radius: 28px;
+  left: 50%;
+  top: 50%;
+  position: relative;
+  display: block;
+  background: #010101;
+  width: 150px;
+  box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+/*Partners/Address/Contact*/
+
+.sec-partners {
+  left: 60px;
+}
+
+
+.sec-partners h1 {padding: .35em;}
+.sec-partners h1 {margin-top: 1em;}
+.sec-partners h1 {
+  text-align: center !important;
+}
+
+.sec-partners .row {
+  float: center;
+  margin: 1.5em 0;
+  width: 100%;
+  text-align: center;
+  font-size: 110%;
+  line-height: 1.5;
+  
+        .container{
+        	padding: 20px 40px 40px 40px;
+        	margin: 0px 10px 10px 10px;
+        	position: relative;
+        	display: block;
+        	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+            text-align: center;
+        	border: 1px solid white;
+        	color:white;
+        }
+  
+}
+
+/*Message*/
+
+
+/*Bottom ccs*/
+
+.venom2 {
+ height: 150px;
+ width: 100px;
+ top: 50%;
+ text-align: center; 
+ object-fit: contain;
+} 
+
+  footer {
+    span {
+      cursor: pointer;
+      display: block;
+    }
+    position: relative;
+    display: block;
+    background: #010101;
+    z-index: 2;
+    line-height: 50px;
+    border-radius: 28px;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
+}
+
+footer {
+  border-radius: 28px;
+  left: 50%;
+  top: 5%;
+  bottom: 5%;
+  position: relative;
+  display: block;
+  background: #010101;
+
+  box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
