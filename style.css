@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 // Variables
 $red: #ff0000;
 $lBlack: #010101;
@@ -12,6 +9,8 @@ $lightGrey: #C0C0C0;
 @mixin transition($property) {transition: $property .25s;}
 
 /*Typography*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400; 500;600;700;800;900&display=swap');
 html {font: 16px 'Open Sans Condensed', Roboto, Verdana, sans-serif;}
 h1 {font-size: 2.25em;}
 h2 {font-size: 2em;}
