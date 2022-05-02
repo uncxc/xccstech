@@ -171,6 +171,7 @@ h6:not(.server) {
 .venom1 {
  height: 250px;
  width: 250px;
+ display: block;
  object-fit: contain;
 }
 
