@@ -79,6 +79,19 @@ a {
 
 
 /*Left Title*/
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+.title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  letter-spacing: 1px;
+}
+
 
 h4 {
 
@@ -170,19 +183,6 @@ h6:not(.server) {
  object-fit: contain;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cairo');
-
-.title {
-  font-family: "Cairo";
-  text-align: center;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  letter-spacing: 1px;
-}
 
 
 h1,h5 {
