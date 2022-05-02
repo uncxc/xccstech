@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 // Variables
 $red: #ff0000;
 $lBlack: #010101;
@@ -9,8 +11,6 @@ $lightGrey: #C0C0C0;
 @mixin transition($property) {transition: $property .25s;}
 
 /*Typography*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400; 500;600;700;800;900&display=swap');
 html {font: 16px 'Open Sans Condensed', Roboto, Verdana, sans-serif;}
 h1 {font-size: 2.25em;}
 h2 {font-size: 2em;}
@@ -427,18 +427,4 @@ footer {
   box-shadow: 0 2px 6px rgba(170, 185, 200, 0.4);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-/* mobile section */
-
-@media screen and (max-width: 400px) {
-  nav ul {
-    text-align: center;
-  }
-  nav ul li {
-    margin: 20px;
-  }
-  .project {
-    margin: 40px 0;
-  }
 }
