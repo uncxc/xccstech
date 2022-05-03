@@ -506,11 +506,3 @@ and (min-resolution: 192dpi)and (max-width:640px) {
      background-image: url('https://z.zz.fo/AhDsk.png');
   }
 } 
-  
-  
-/* Styles */
-
-// Show elements when on screen
-.animated {
-  visibility: visible;
-}
