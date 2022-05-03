@@ -488,4 +488,14 @@ and (min-resolution: 192dpi)and (max-width:640px) {
 // Show elements when on screen
 .animated {
 visibility: visible;
-}
+  }
+  
+  /* Resize footer images */
+ @media screen and (max-width: 640px) {
+
+footer .sqs-image .sqs-image-content img, footer .image-block {
+
+    transform: scale(0.5)
+
+}}
+
