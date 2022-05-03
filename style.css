@@ -156,7 +156,7 @@ h6:not(.server) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 20vh;
   letter-spacing: 1px;
 }
 
