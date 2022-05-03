@@ -404,17 +404,7 @@ footer {
 
 /* mobile section */
 
-@media screen and (max-width: 400px) {
-  nav ul {
-    text-align: center;
-  }
-  nav ul li {
-    margin: 0px;
-  }
-  .project {
-    margin: 0px 0;
-  }
-}
+
 // Show elements when on screen
 .animated {
   visibility: visible;
