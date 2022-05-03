@@ -487,7 +487,7 @@ and (min-resolution: 192dpi)and (max-width:640px) {
 
 // Show elements when on screen
 .animated {
-visibility: visible;
+visibility: invisible;
   }
   
 
