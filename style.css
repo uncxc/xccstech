@@ -367,14 +367,6 @@ hr {
 
 /*Bottom ccs*/
 
-.venom2 {
- height: 150px;
- width: 100px;
- top: 50%;
- text-align: center; 
- object-fit: contain;
-} 
-
   footer {
     span {
       cursor: pointer;
