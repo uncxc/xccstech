@@ -493,7 +493,7 @@ visibility: visible;
   /* Resize footer images */
  @media screen and (max-width: 640px) {
 
-footer .sqs-image .sqs-image-content img, footer .image-block {
+footer {
 
     transform: scale(0.5)
 
