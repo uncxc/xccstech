@@ -409,7 +409,9 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-  
-  .logofoot {
-  display: block;
- }
+.logofoot {
+ height: 200px;
+ width: 100px;
+ text-align: center; 
+ object-fit: contain;
+}
