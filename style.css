@@ -490,12 +490,4 @@ and (min-resolution: 192dpi)and (max-width:640px) {
 visibility: visible;
   }
   
-  /* Resize footer images */
- @media screen and (max-width: 640px) {
-
-footer {
-
-    transform: scale(0.5)
-
-}}
 
