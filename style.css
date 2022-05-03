@@ -415,3 +415,7 @@ footer {
     margin: 0px 0;
   }
 }
+// Show elements when on screen
+.animated {
+  visibility: visible;
+}
