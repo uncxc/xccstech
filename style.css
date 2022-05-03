@@ -367,6 +367,15 @@ hr {
 
 /*Bottom ccs*/
 
+img {
+ height: 100px;
+ width: 100px;
+ text-align: center; 
+ object-fit: contain;
+}
+
+
+
   footer {
     span {
       cursor: pointer;
@@ -401,9 +410,3 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.logofoot {
- height: 100px;
- width: 100px;
- text-align: center; 
- object-fit: contain;
-}
