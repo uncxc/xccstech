@@ -47,3 +47,11 @@ public function get_ip_address() {
      self::$ip = $ip;
      return true;
  }
+
+//The name of your log file.
+//Modify this and add a full path if you want to log it in 
+//a specific directory.
+$pathToFile = 'visitors.log';
+
+//Log the data to your file using file_put_contents.
+file_put_contents($pathToFile, $data, FILE_APPEND);
