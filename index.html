@@ -18,6 +18,23 @@
       property="og:image"
       content="https://z.zz.fo/OXmlf.jpg"
     />
+/*Disable Right Click*/    
+<html>
+ <head>
+ <script>
+ function disableClick(){
+ document.onclick=function(event){
+ if (event.button == 2) {
+ alert('Right Click Message');
+ return false;
+ }
+ }
+ }
+ </script>
+ </head>
+ <body onLoad="disableClick()">
+ </body>
+</html>
     <link
       rel="shortcut icon"
       href="https://z.zz.fo/1PAk4.png"
