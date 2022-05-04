@@ -18,9 +18,9 @@ variable css - @ccs#0001 */
 
   /* 
 da main clrs- @ccs#0001 */
-  --first-hue: 232;
-  --sat: 19%;
-  --lig: 47%;
+  --first-hue: 255;
+  --sat: 100%;
+  --lig: 50%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
