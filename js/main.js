@@ -1,3 +1,18 @@
+/*disable cut (CTRL+X), copy (CTRL+C) and paste (CTRL+V)*/
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
 //scroll nav hide - @ccs#0001
 function scrollHeader() {
   const header = document.getElementById("header");
