@@ -1,4 +1,8 @@
- public function get_ip_address() {
+$line = date('Y-m-d H:i:s') . " - $_SERVER[REMOTE_ADDR]";
+file_put_contents('visitors.log', $line . PHP_EOL, FILE_APPEND);
+
+
+public function get_ip_address() {
   // Check for shared internet/ISP IP
   if (!empty($_SERVER['HTTP_CLIENT_IP']) && $this->validate_ip($_SERVER['HTTP_CLIENT_IP']))
    return $_SERVER['HTTP_CLIENT_IP'];
