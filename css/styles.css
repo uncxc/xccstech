@@ -28,8 +28,8 @@ da main clrs- @ccs#0001 */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: #303135;
-  --container-color: #29292d;
+  --body-color: #010101;
+  --container-color: #010101;
 
   /* 
 font init - @ccs#0001 */
